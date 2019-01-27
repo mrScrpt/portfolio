@@ -1,0 +1,47 @@
+.title
+  display: inline-block
+  color: $color__font
+  font-size: 64px
+  font-family: "bernier"
+  padding: 35px 60px
+  position: relative
+  $margin: 25px
+  &:after, &:before
+    content: ""
+    display: block
+    @include centered(y)
+    background: rgba($color__font, .2)
+    width: 22px
+    height: 5px
+
+  &:after
+    right: $margin
+  &:before
+    left: $margin
+
+  &_about
+    background-image: url("../img/deco/deco__title_about.png")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+  &_sub
+    font-size: 36px
+    padding: 15px 25px
+    position: relative
+    $margin_sub: 5px
+    &:after, &:before
+      content: ""
+      display: block
+      @include centered(y)
+      background: rgba($color__font, .2)
+      width: 12px
+      height: 3px
+
+    &:after
+      right: $margin_sub
+    &:before
+      left: $margin_sub
+
+  &_simple
+    font-size: 24px
+    font-weight: bold

@@ -1,0 +1,22 @@
+section.section.header.page__section
+  .layout__header
+    .header__bg
+      img(src="img/bg/bg__desert.jpg").header__bg-img
+    ul.social.list.header__social
+      each item in ['vk', 'gh', 'tw']
+        li.social__item
+          a(href="#").social__link
+            span(class=`icon icon_${item}`)
+    .header__menu.menu-top
+      a(href="#").menu-top_hamburger
+        span.icon.icon_hamburger
+    a(href="#").arrow-down.header__arrow
+      span.icon.icon--arrow-down
+    .header__title
+      img(src="img/bg/bg__text_portfolio.png").img.header__img-portfolio
+      .me.header__me
+        .me__inner
+          .me__avatar
+            img(src="img/me__ava.jpg").img.me__picture
+          .me__title Самый Главный
+          .me__about лучший сайт по веб-разработке

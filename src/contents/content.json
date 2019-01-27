@@ -1,0 +1,19 @@
+{
+  "skills" : [
+    {
+      "Frontend" : ["HTML5", "CSS3", "JS and JQ"]
+    },
+    {
+      "Backend" : ["PHP", "MySQL", "NODE JS", "Mongo DB"]
+    },
+    {
+      "WorkFlow" : ["Git", "Gulp", "Bower"]
+    }
+  ],
+  "address": {
+    "skype": "skype_kdn"
+    ,"mail": "astahov@gmail.com"
+    ,"phone-main": "+380 93 00 00 000"
+    ,"mark": "Харьков, ул. Пушкинская 21-Б"
+  }
+}

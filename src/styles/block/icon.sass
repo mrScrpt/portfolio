@@ -1,0 +1,69 @@
+.icon
+  min-width: 1em
+
+.icon
+  display: inline-block
+  text-align: center
+  background: 50% no-repeat
+
+.icon:empty:after
+  visibility: hidden
+  content: '\00A0'
+
+.icon>img,.icon>svg
+  margin: -5.15em 0 -5em
+  vertical-align: middle
+
+.icon--arrow-down
+  background-image: url("/img/icon/icon--arrow-down.svg")
+  width: 40px
+  height: 40px
+
+.icon_hamburger
+  display: block
+  @include sprite($icon-hamburger)
+
+
+.icon_vk
+  display: block
+  @include sprite($icon-vk)
+  transform: scale(0.7)
+  transform-origin: 0 0
+  &:hover
+    @include sprite($icon-vk_hover)
+
+.icon_gh
+  display: block
+  @include sprite($icon-gh)
+  transform: scale(0.7)
+  transform-origin: 0 0
+  &:hover
+    @include sprite($icon-gh_hover)
+
+.icon_tw
+  display: block
+  @include sprite($icon-tw)
+  transform: scale(0.7)
+  transform-origin: 0 0
+  &:hover
+    @include sprite($icon-tw_hover)
+
+
+.icon_skype
+  @include sprite($icon-skype)
+  transform-origin: 0 0
+
+.icon_mail
+
+  @include sprite($icon-mail)
+  transform-origin: 0 0
+
+.icon_phone-main
+  @include sprite($icon-phone-main)
+  transform-origin: 0 0
+
+.icon_mark
+
+  @include sprite($icon-mark)
+
+  transform-origin: 0 0

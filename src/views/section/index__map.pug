@@ -1,0 +1,13 @@
+section.section.map
+  .map__inner
+    .map__block
+      .map__blur
+      .map__content.address
+        .address__title
+          .title.title_sub
+            | Контакты
+        ul.address__list.list
+          each item, value in address
+            li(class=`address__item address__${value}`)
+              span(class=`icon icon_${value} address__icon` )
+              span.address__text= item

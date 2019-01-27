@@ -1,0 +1,30 @@
+//Позиционирование
+@mixin centered($axis: 'both')
+  position: absolute
+  @if $axis == 'both'
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  @if $axis == 'x'
+    left: 50%
+    transform: translateX(-50%)
+  @if $axis == 'y'
+    top: 50%
+    transform: translateY(-50%)
+
+//Шрифты
+@mixin font-face($style-name, $file, $family, $category:"")
+  $filepath: "fonts/" + $family + "/" + $file
+  @font-face
+    font-family: "#{$style-name}"
+    src: url($filepath + ".eot")
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg')
+
+  %#{$style-name}
+    font:
+      @if $category != ""
+        family: "#{$style-name}", #{$category}
+
+      @else
+        family: "#{$style-name}"
+        weight: normal
